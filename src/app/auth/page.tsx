@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
@@ -9,7 +9,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { ArrowLeft, Mail, Lock, User, Github, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 
-export default function AuthPage() {
+function AuthForm() {
     const [isLogin, setIsLogin] = useState(true);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -253,5 +253,17 @@ export default function AuthPage() {
                 </motion.div>
             </div>
         </div>
+    );
+}
+
+export default function AuthPage() {
+    return (
+        <Suspense fallback={
+            <div className="min-h-screen w-full flex items-center justify-center bg-background">
+                <div className="w-8 h-8 rounded-full border-t-2 border-accent animate-spin" />
+            </div>
+        }>
+            <AuthForm />
+        </Suspense>
     );
 }
