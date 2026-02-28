@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 
 const TESTIMONIALS = [
-    { name: "Sarah J.", role: "Product Designer at Spotify", text: "CraftCV's typography and grid systems are flawless. It literally looks like I designed my resume in Figma for hours, but it took exactly 8 minutes." },
+    { name: "Sarah J.", role: "Product Designer at Spotify", text: "LaunchPad's typography and grid systems are flawless. It literally looks like I designed my resume in Figma for hours, but it took exactly 8 minutes." },
     { name: "Michael T.", role: "Senior Engineer at Stripe", text: "The ATS scanning feature is legit. My interview rate doubled after scanning my resume against their suggestions." },
     { name: "Elena R.", role: "Marketing Director", text: "Finally, a resume builder that isn't clunky. The cinematic previews and instant exports are a game changer." },
     { name: "David O.", role: "Recent Graduate", text: "I used the AI Co-Pilot to rewrite my bullet points. It took my generic intern experience and made it sound professional and impact-driven." },
     { name: "Jessica K.", role: "UX Researcher", text: "A breathtaking UI. Using this tool is an experience in itself. The exported PDF is pixel perfect." },
-    { name: "Alex W.", role: "Operations Lead", text: "I've tried them all. CraftCV is the only one that truly abstracts the pain of layout management completely away." }
+    { name: "Alex W.", role: "Operations Lead", text: "I've tried them all. LaunchPad is the only one that truly abstracts the pain of layout management completely away." }
 ];
 
 export function TestimonialMarquee() {

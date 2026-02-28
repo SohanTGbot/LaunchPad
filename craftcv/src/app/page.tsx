@@ -125,7 +125,7 @@ export default function Home() {
             Start your creation today.
           </h2>
           <p className="text-foreground/40 text-lg mb-10 leading-relaxed">
-            Join 1.25M+ professionals who've already elevated their careers with CraftCV.
+            Join 1.25M+ professionals who've already elevated their careers with LaunchPad.
           </p>
           <Link href="/onboarding">
             <Button size="lg" className="px-10 sm:px-14 rounded-full h-14 font-black uppercase tracking-widest text-[11px] shadow-3xl shadow-accent/20">
@@ -133,7 +133,7 @@ export default function Home() {
             </Button>
           </Link>
           <p className="mt-14 text-foreground/20 text-[10px] font-black uppercase tracking-[0.5em]">
-            CraftCV © {new Date().getFullYear()}. Designed for the 1%.
+            LaunchPad © {new Date().getFullYear()}. Designed for the 1%.
           </p>
         </div>
       </footer>

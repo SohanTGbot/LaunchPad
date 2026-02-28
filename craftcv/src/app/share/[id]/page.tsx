@@ -3,15 +3,14 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import { useResumeStore, ResumeData } from '@/store/useResumeStore';
+import { insforge } from '@/lib/insforge';
 import { MeridianTemplate } from '@/templates/MeridianTemplate';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Share2, Download, Printer, Globe, Shield, Eye } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
-
 export default function PublicSharePage() {
     const params = useParams();
     const id = params.id as string;
-    const { fetchResume } = useResumeStore();
     const [resumeData, setResumeData] = useState<ResumeData | null>(null);
     const [isLoading, setIsLoading] = useState(true);
 
@@ -23,16 +22,20 @@ export default function PublicSharePage() {
             try {
                 // Mock delay for cinematic loading
                 await new Promise(r => setTimeout(r, 1500));
-                // We'll try to find it in the store or simulate a load
-                // In a real prod environment, we'd fetch from DB by sharing token
-                const data = await fetchResume(id);
-                if (data) setResumeData(data);
+
+                const { data, error } = await insforge.database.from('resumes').select('*').eq('id', id).single();
+                if (error) throw error;
+                if (data?.data) {
+                    setResumeData(data.data as ResumeData);
+                }
+            } catch (err) {
+                console.error("Failed to load resume:", err);
             } finally {
                 setIsLoading(false);
             }
         };
         load();
-    }, [id, fetchResume]);
+    }, [id]);
 
     if (isLoading) {
         return (
@@ -177,7 +180,7 @@ export default function PublicSharePage() {
                 {/* Footer Brand */}
                 <div className="mt-24 text-center">
                     <p className="text-[10px] font-black uppercase tracking-[0.4em] text-foreground/20">
-                        Crafted with <span className="text-accent">CraftCV</span>
+                        Crafted with <span className="text-accent">LaunchPad</span>
                     </p>
                 </div>
             </main>

@@ -21,10 +21,10 @@ export function A4Page({ className = "" }: A4PageProps) {
                 </div>
 
                 <div className="grid grid-cols-2 gap-y-1 mt-6 text-[0.8em] text-gray-400 font-medium">
-                    <div className="flex items-center gap-2"><Mail size={12} className="text-accent/40" /> sohan@craftcv.ai</div>
+                    <div className="flex items-center gap-2"><Mail size={12} className="text-accent/40" /> sohan@launchpad.ai</div>
                     <div className="flex items-center gap-2"><Phone size={12} className="text-accent/40" /> +91 9988776655</div>
                     <div className="flex items-center gap-2"><MapPin size={12} className="text-accent/40" /> Bangalore, India</div>
-                    <div className="flex items-center gap-2"><Globe size={12} className="text-accent/40" /> craftcv.design</div>
+                    <div className="flex items-center gap-2"><Globe size={12} className="text-accent/40" /> launchpad.design</div>
                 </div>
             </div>
 

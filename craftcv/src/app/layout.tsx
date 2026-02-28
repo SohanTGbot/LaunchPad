@@ -26,21 +26,21 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "CraftCV - The Cinematic AI Resume Builder",
+  title: "LaunchPad - The Cinematic AI Resume Builder",
   description: "Build high-impact, ATS-optimized resumes with cinematic real-time AI guidance.",
   keywords: ["resume builder", "ai resume", "cv maker", "ats optimization", "professional cv"],
-  authors: [{ name: "CraftCV Team" }],
+  authors: [{ name: "LaunchPad Team" }],
   openGraph: {
-    title: "CraftCV - The Cinematic AI Resume Builder",
+    title: "LaunchPad - The Cinematic AI Resume Builder",
     description: "Experience the future of career storytelling with AI.",
-    url: "https://craftcv.ai",
-    siteName: "CraftCV",
+    url: "https://launchpad.com",
+    siteName: "LaunchPad",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "CraftCV Dashboard Preview",
+        alt: "LaunchPad Dashboard Preview",
       },
     ],
     locale: "en_US",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "CraftCV - AI Resume Builder",
+    title: "LaunchPad - AI Resume Builder",
     description: "Build professional resumes with ease.",
     images: ["/og-image.png"],
   },
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
-  metadataBase: new URL("https://craftcv.ai"),
+  metadataBase: new URL("https://launchpad.com"),
 };
 
 export default function RootLayout({

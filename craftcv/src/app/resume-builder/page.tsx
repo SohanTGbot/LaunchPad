@@ -556,7 +556,7 @@ export default function ResumeBuilder() {
                 {/* SIDEBAR NAV */}
                 <div className="sidebar">
                     <div className="px-8 mb-12">
-                        <h2 className="font-display text-lg tracking-tighter">CraftCV<span className="text-accent">.</span></h2>
+                        <h2 className="font-display text-lg tracking-tighter">LaunchPad<span className="text-accent">.</span></h2>
                     </div>
                     <nav>
                         {sections.map((sec) => (

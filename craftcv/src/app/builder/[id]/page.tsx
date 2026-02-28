@@ -272,7 +272,7 @@ export default function BuilderPage({ params: paramsPromise }: { params: Promise
 
     const handlePrint = useReactToPrint({
         contentRef: printRef,
-        documentTitle: resume.title || 'CraftCV_Resume',
+        documentTitle: resume.title || 'LaunchPad_Resume',
     });
 
     const safeExport = useCallback(() => handlePrint(), [handlePrint]);

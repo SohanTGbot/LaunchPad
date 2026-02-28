@@ -114,7 +114,7 @@ export function HeroSection() {
                         <EntranceItem>
                             <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-accent/20 bg-accent/5 backdrop-blur-xl mb-8 shadow-lg">
                                 <span className="flex h-2 w-2 rounded-full bg-accent-sharp animate-pulse shadow-[0_0_8px_var(--accent-sharp)]" />
-                                <span className="text-[10px] font-black tracking-[0.3em] text-foreground/50 uppercase">CraftCV AI Studio</span>
+                                <span className="text-[10px] font-black tracking-[0.3em] text-foreground/50 uppercase">LaunchPad AI Studio</span>
                             </div>
                         </EntranceItem>
 
@@ -264,7 +264,7 @@ function ResumePreviewCard() {
                 <h2 className="text-white font-bold text-xl tracking-tight">Sohan Mandal</h2>
                 <p className="text-white/80 text-[11px] uppercase tracking-widest font-sans mt-0.5">Senior Product Designer</p>
                 <div className="mt-2 flex flex-wrap gap-x-4 gap-y-0.5">
-                    {["sohan@craftcv.ai", "Bangalore, India", "+91 9955776655"].map(d => (
+                    {["sohan@launchpad.ai", "Bangalore, India", "+91 9955776655"].map(d => (
                         <span key={d} className="text-white/70 text-[9px] font-sans">{d}</span>
                     ))}
                 </div>
