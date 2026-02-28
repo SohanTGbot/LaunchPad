@@ -31,6 +31,10 @@
     "tailwind-merge": "^3.5.0",
     "zustand": "^5.0.11"
   },
+  "overrides": {
+    "react": "$react",
+    "react-dom": "$react-dom"
+  },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
